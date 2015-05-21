@@ -1,0 +1,32 @@
+{
+  "name": "moment-clock",
+  "version": "1.0.0",
+  "description": "Simple factory for moment(), that allows setting the time to something static.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karneyli/moment-clock.git"
+  },
+  "keywords": [
+    "moment",
+    "clock",
+    "time",
+    "testing"
+  ],
+  "author": "Karney Li",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karneyli/moment-clock/issues"
+  },
+  "homepage": "https://github.com/karneyli/moment-clock#readme",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "moment": "^2.10.3"
+  }
+}
