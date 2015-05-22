@@ -1,6 +1,9 @@
 {
   "name": "moment-clock",
   "version": "1.0.0",
+  "engines": {
+    "node": ">= 0.8.x"
+  },
   "description": "Simple factory for moment(), that allows setting the time to something static.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/karneyli/moment-clock.git"
+    "url": "git://github.com/karneyli/moment-clock.git"
   },
   "keywords": [
     "moment",
@@ -16,6 +19,7 @@
     "time",
     "testing"
   ],
+  "main": "./index",
   "author": "Karney Li",
   "license": "MIT",
   "bugs": {
