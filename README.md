@@ -23,7 +23,7 @@ If in your tests you want to set the time that is returned by moment-clock:
     clock.setTime(moment('2014-05-02'));
 
     var now = clock.getTime();  
-    // now is 2014-05-02, no matter where #getTime is called from it will return 2014-05-02 
+    // now is 2014-05-02, wherever #getTime is called from it will return 2014-05-02 
 
 To reset the clock to the actual time:
 
