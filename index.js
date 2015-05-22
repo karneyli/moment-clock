@@ -2,8 +2,7 @@ function Clock() {
 }
 
 Clock.prototype.getTime = function() {
-  var result = this.now || moment();
-  return moment(result);
+  return moment(this.now || moment());
 };
 
 Clock.prototype.setTime = function(t) {
@@ -11,7 +10,7 @@ Clock.prototype.setTime = function(t) {
 };
 
 Clock.prototype.reset = function() {
-  this.now = undefined;
+  this.now = null;
 };
 
 exports = module.exports = new Clock();

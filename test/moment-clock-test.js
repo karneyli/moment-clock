@@ -5,7 +5,7 @@ describe("moment-clock", function() {
 
   beforeEach(function() {
     clock.reset();
-    assert.isUndefined(clock.now);
+    assert.isNull(clock.now);
   });
 
   it("#setTime then #getTime", function() {
@@ -20,10 +20,10 @@ describe("moment-clock", function() {
 
     assert.isDefined(clock.now);
     clock.reset();
-    assert.isUndefined(clock.now);
+    assert.isNull(clock.now);
 
     assert(moment('2015-05-20').isBefore(clock.getTime()));
-    assert.isUndefined(clock.now);
+    assert.isNull(clock.now);
   });
 
   it("all clocks tell same time", function() {
@@ -41,6 +41,11 @@ describe("moment-clock", function() {
     assert(anotherClock.getTime().isSame(yesterday));
 
   }); 
+
+  it("passing String into #setTime", function() {
+    clock.setTime('2015-06-01');
+    assert(moment('2015-06-01').isSame(clock.getTime()));
+  });
 
 
 });
