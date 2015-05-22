@@ -1,8 +1,8 @@
 # moment-clock [![Build Status](https://travis-ci.org/karneyli/moment-clock.svg?branch=master)](https://travis-ci.org/karneyli/moment-clock)
 
-Simple factory for moment(), that allows setting the time to something static.  
+Factory for moment(), that allows setting now to a static time.
 
-Often times we would like to test our code with a specific time in mind to verify that the behavior is correct when the time is set forward, backwards, or kept the same.  This can be often challenging if you're using moment's constructors straight up because there's no way to tell moment what the current time is and for time to not march forward.
+Often times we would like to test our code with a specific time in mind to verify that the behavior is correct when the time has moved forward, backwards, or kept the same.  This can be often challenging if you're using the constructors in momentjs straight up because there's no way to tell momentjs what the current time is and for time to not march forward on it's own.
 
 ## Installation
 
