@@ -17,17 +17,17 @@ Require moment-clock whenever you need to get the current time instead of using 
 
 If in your tests you want to set the time that is returned by moment-clock:
 		
-		var clock = require('moment-clock');
-		var moment = require('moment');
+    var clock = require('moment-clock');
+    var moment = require('moment');
 
-		clock.setTime(moment('2014-05-02'));
+    clock.setTime(moment('2014-05-02'));
 
-		var now = clock.getTime();  
-		// now is 2014-05-02, no matter where #getTime is called from it will return 2014-05-02 
+    var now = clock.getTime();  
+    // now is 2014-05-02, no matter where #getTime is called from it will return 2014-05-02 
 
 To reset the clock to the actual time:
 
-		clock.reset();
+    clock.reset();
 
 ## License
 
